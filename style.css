@@ -1,8 +1,8 @@
 *{
-    background-image: url("https://images.unsplash.com/photo-1547399300-7613d8f5f8f1?ixlib=rb-1.2.1&w=1000&q=80");
+    background-image: url("https://res.cloudinary.com/dxid31gdy/image/upload/v1619554756/Bart_driving_oo80ih.png");
     background-color: yellow;
     background-blend-mode: darken;
-    
+    background-repeat: no-repeat;
     
   }
 
@@ -22,11 +22,11 @@
 
 
   @keyframes movingDiv {
-    0%   {top: 0px; left: 0px; background: red;}
-    25%  {top: 0px; left: 100px; background: blue;}
-    50%  {top: 100px; left: 100px; background: yellow;}
-    75%  {top: 100px; left: 0px; background: green;}
-    100% {top: 0px; left: 0px; background: red;}
+    0%   {top: 5000px; left: 0px; background: red;}
+    25%  {top: 0px; left: 600px; background: blue;}
+    50%  {top: 100px; left: 600px; background: yellow;}
+    75%  {top: 400px; left: 0px; background: green;}
+    100% {top: 0px; left: 6000px; background: red;}
   }
 
   @keyframes gradientDiv {
@@ -37,10 +37,21 @@
     100% {top: 0px; left: 0px; background: red;}
   }
 
+  @keyframes headerAnimation{
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+  }
+
+  .head_title{
+      animation: headerAnimation 5s infinite;
+  }
 
   .clipping-section{
-      background-image: url('https://teamcoco-img-cdn.akamaized.net/r/image/ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5Lld5SnpNenBjTDF3dmMzUmhkR2xqTG5SbFlXMWpiMk52TG1OdmJWd3ZabWxzWlhOY0x6TTNYQzlpWmx3dk1EYzFNeTFuZFdWemRDMHlMVEl0TlRVNU5EazVOV00xTldFeU5DNXFjR1ZuSWl3aWFXMWhaMlZjTDJwd1pXY2lYUS5tdXJFTWNsbGhKVDlFOFJURmRxNTgweW9ZUlFYSE02NDZ4NVQzXzg0Q0pv/resize%3D640x360/share@2x.jpg?v=9');
-      clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3535b7af-2104-4309-bdbf-074b402f65fa/d2wjkqm-5191485f-d57b-473e-a6a7-28ee80fd6120.jpg/v1/fill/w_900,h_492,q_75,strp/illuminati_triangle_by_engel08.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8zNTM1YjdhZi0yMTA0LTQzMDktYmRiZi0wNzRiNDAyZjY1ZmEvZDJ3amtxbS01MTkxNDg1Zi1kNTdiLTQ3M2UtYTZhNy0yOGVlODBmZDYxMjAuanBnIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9NDkyIn1dXX0.KFrGKeOZ5V31pEc5DWYjCFAOj0DIyrgoExRfMWNYMsQ');
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       height: 200vh;
   }
 
@@ -58,4 +69,17 @@
   .gradient-p{
       background-color: aliceblue;
       font-size: large;
+  }
+
+  .div-im-putting-gradients-on{
+    background: rgb(70, 184, 167);
+    background: radial-gradient(circle,
+    rgba(70,184,167,1) 0%, rgba(55, 80, 219, 1), 100%); 
+  }
+
+
+  /* Starts the styling of random HTML */
+  .head_title{
+      text-align: center;
+      font-size: 10vh;
   }
